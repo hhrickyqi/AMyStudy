@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>商城首页</title>
+        <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+        <script>
+            /*var interval;
+
+            function init() {
+                interval = setInterval("changeImg()", 3000);
+            }
+
+            var i = 1;
+
+            function changeImg() {
+                i++;
+                document.getElementById("banner_img").src = "img/" + i + ".jpg";
+                if (i == 3) {
+                    i = 0;
+                    clearInterval(interval);//只循环一轮
+                }
+            }*/
+
+            /* var time;
+             $(function () {
+                 time = setInterval("showAd()",3000);
+             });
+             function showAd() {
+                 $("#img").slideDown(1000);
+                 clearInterval(time);
+                 setInterval("hideAd()",3000);
+             }
+             function hideAd() {
+                 $("#img").slideup(1000);
+             }*///淡出淡出显示图片
+        </script>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            div#content {
+                width: 100%;
+                padding: 0px;
+                height: 1080px;
+                margin: 0;
+            }
+
+            #head {
+                width: 1519px;
+                height: 50px;
+            }
+
+            #head div {
+                height: 100%;
+                width: 503px;
+                float: left;
+            }
+
+            div#daohang {
+                width: 1519px;
+                height: 50px;
+                background: black;
+                margin: 0 auto;
+                line-height: 50px;
+            }
+
+            div#daohang ul {
+                margin: 0;
+            }
+
+            div#daohang ul li {
+                color: white;
+                float: left;
+                list-style: none;
+            }
+
+            #banner {
+                width: 1519px;
+            }
+
+            div#left {
+                width: 209px;
+                height: 475px;
+                float: left;
+            }
+
+            div#right {
+                width: 519px;
+                height: 236px;
+                float: left;
+            }
+
+            div.goods {
+                width: 260px;
+                height: 239px;
+                float: left;
+                text-align: center;
+            }
+
+            #ad {
+                width: 1519px;
+            }
+
+            div#left2 {
+                border: 1px solid red;
+                width: 206px;
+                height: 475px;
+                float: left;
+            }
+
+            div#right2 {
+                border: 1px solid red;
+                width: 622px;
+                height: 236.5px;
+                float: left;
+            }
+
+            div.goods2 {
+                border: 1px solid red;
+                width: 206px;
+                height: 236.5px;
+                float: left;
+                text-align: center;
+            }
+
+            #under {
+                width: 1519px;
+                height: 50px;
+
+            }
+
+        </style>
+    </head>
+    <body onload="init()">
+        <!--&lt;!&ndash;<img src="img/2.jpg" id="img" style="display: none"/>&ndash;&gt;配套jquery-->
+        <div id="content">
+            <div id="head">
+                <div>
+                    <img src="img/logo.png" height="50px">
+                </div>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="img/header.png" height="50px">
+                </div>
+                <div style="height: 50px;line-height: 50px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">登陆</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">注册</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">购物车</a>
+                </div>
+            </div>
+
+            <div id="daohang">
+                <ul>
+                    <li><font size="4">&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;</font></li>
+                    <li>手机数码&nbsp;&nbsp;&nbsp;</li>
+                    <li>电脑办公&nbsp;&nbsp;&nbsp;</li>
+                    <li>鞋靴箱包&nbsp;&nbsp;&nbsp;</li>
+                    <li>家用电器</li>
+                </ul>
+            </div>
+
+            <div id="banner">
+                <img src="img/1.jpg" id="banner_img" width="100%"/>
+            </div>
+
+            <div id="goodsTips">
+                <span style="font-size: 30px">&nbsp;&nbsp;最新商品</span>&nbsp;&nbsp;&nbsp;<img src="img/title2.jpg">
+            </div>
+
+            <div id="goodsList">
+                <div id="left">
+                    <img src="img/big01.jpg">
+                </div>
+                <div id="right">
+                    <img src="img/middle01.jpg">
+                </div>
+                <div class="goods">
+                    <img src="img/small01.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small02.jpg">
+                    <p><a href="#"><font color="gray">电视</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small04.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small05.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small06.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small07.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+                <div class="goods">
+                    <img src="img/small08.jpg">
+                    <p><a href="#"><font color="gray">豆浆机</font> </a></p>
+                    <p><font color="red">￥499</font></p>
+                </div>
+            </div>
+            <div id="ad">
+                <img src="img/ad.jpg" id="ad_img" width="100%">
+            </div>
+            <div id="goodsTips2">
+                <span style="font-size: 30px">&nbsp;&nbsp;热门商品</span>&nbsp;&nbsp;&nbsp;<img src="img/title2.jpg">
+            </div>
+            <div id="goodsList2">
+                <div id="left2">
+                    <img src="img/big01.jpg">
+                </div>
+                <div id="right2">
+                    <img src="img/middle01.jpg">
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+                <div class="goods2">
+                    <img src="img/small03.jpg">
+                    <p><a href="#"><font color="gray">电饭锅</font> </a></p>
+                    <p><font color="red">￥399</font></p>
+                </div>
+            </div>
+            <div id="under">
+                <img src="img/footer.jpg" style="width: 1519px;">
+
+                <div style="height: 50px;line-height: 50px; text-align:center; ">
+                    <a href="#" style="text-decoration: none">关于我们</a>
+                    <a href="#" style="text-decoration: none">联系我们</a>
+                    <a href="#" style="text-decoration: none">招贤纳士</a>
+                    <a href="#" style="text-decoration: none">法律声明</a>
+                    <a href="#" style="text-decoration: none">友情链接</a>
+                    <a href="#" style="text-decoration: none">支付方式</a>
+                    <a href="#" style="text-decoration: none">配送方式</a>
+                    <a href="#" style="text-decoration: none">服务声明</a>
+                    <a href="#" style="text-decoration: none">广告声明</a>
+                </div>
+                <div style="text-align: center;color: gray;">
+                    <span>Copyright &copy 2019-2020 唯创网讯 版权所有</span>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
