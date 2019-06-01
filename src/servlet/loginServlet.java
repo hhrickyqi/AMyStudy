@@ -16,6 +16,9 @@ public class loginServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException,IOException{
 
+
+        //解决中文问题!!!!!!!!!!!!!!!!!!!!
+        req.setCharacterEncoding("UTF-8");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         System.out.println(username + "," + password);
@@ -23,6 +26,7 @@ public class loginServlet extends HttpServlet{
     }
     public void login(String username, String password, HttpServletResponse resp){
         try {
+
             QueryRunner qr = new QueryRunner(C3P0Utils.getDataSource());
             String sql = "select * from t_user where username = ? and password = ?";
             User user = qr.query(sql,new BeanHandler<>(User.class),username,password);

@@ -10,8 +10,11 @@ public class User implements Serializable{
     private String password;
 
     private String email;
+    private String name;
+    private String sex;
 
-    public User(){
+
+    /*public User(){
 
     }
 
@@ -20,6 +23,22 @@ public class User implements Serializable{
         this.username = username;
         this.password = password;
         this.email = email;
+    }//如果要加构造方法，不仅必须要和数据库里面的表单属性相同，还得补回无参构造方法*/
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public int getId() {
@@ -60,6 +79,9 @@ public class User implements Serializable{
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
                 '}';
     }
 }

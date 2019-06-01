@@ -12,7 +12,7 @@
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>servlet.loginServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
+
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -25,9 +25,9 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
-        <url-pattern>RegisterServlet</url-pattern>
+        <url-pattern>/registerServlet</url-pattern>
     </servlet-mapping>
-    
+
     <servlet>
         <servlet-name>ServletContext1</servlet-name>
         <servlet-class>servlet.servletContext.servletContext1</servlet-class>
@@ -35,7 +35,7 @@
 
     <servlet-mapping>
         <servlet-name>ServletContext1</servlet-name>
-        <url-pattern>ServletContext1</url-pattern>
+        <url-pattern>/servletContext1</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -45,7 +45,7 @@
 
     <servlet-mapping>
         <servlet-name>ServletContext2</servlet-name>
-        <url-pattern>ServletContext2</url-pattern>
+        <url-pattern>/servletContext2</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -55,7 +55,7 @@
 
     <servlet-mapping>
         <servlet-name>ResponseServlet</servlet-name>
-        <url-pattern>ResponseServlet</url-pattern>
+        <url-pattern>/responseServlet</url-pattern>
     </servlet-mapping>
 
 

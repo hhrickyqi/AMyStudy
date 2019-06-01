@@ -26,6 +26,7 @@ public class ResponseServlet extends HttpServlet{
         //resp.sendRedirect("/login.html");
         //向页面写入内容
         resp.getWriter().write("测试写入功能！");
+        //resp.sendRedirect(req.getContextPath() + "/loginServlet");
     }
 
     @Override
